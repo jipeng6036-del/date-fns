@@ -1,0 +1,15 @@
+{
+  "startedAtUtc": "2026-10-29T10:41:29.126874+00:00",
+  "finishedAtUtc": "2026-10-29T10:54:57.433869+00:00",
+  "seconds": 808.3070199005306,
+  "command": [
+    "docker",
+    "exec",
+    "-w",
+    "/work",
+    "datefns-precision-20261029",
+    "bash",
+    "/evidence/canonical-targeted.sh"
+  ],
+  "exitCode": 0
+}

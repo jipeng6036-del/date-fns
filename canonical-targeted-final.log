@@ -1,0 +1,10 @@
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.0.1 [39m[90m/work/pkgs/core[39m
+
+ [32m✓[39m [30m[45m main [49m[39m src/parseISO/test.ts [2m([22m[2m90 tests[22m[2m)[22m[32m 11[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m1 passed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[32m90 passed[39m[22m[90m (90)[39m
+[2m   Start at [22m 10:54:44
+[2m   Duration [22m 1.28s[2m (import 49%, tests 23%, transform 22%, worker 5%)[22m
+

@@ -1,0 +1,22 @@
+{
+  "startedAtUtc": "2026-10-29T10:40:04.401151+00:00",
+  "finishedAtUtc": "2026-10-29T10:53:35.756309+00:00",
+  "seconds": 811.3551730001345,
+  "command": [
+    "docker",
+    "exec",
+    "-w",
+    "/work",
+    "datefns-precision-20261029",
+    "env",
+    "MISE_TRUSTED_CONFIG_PATHS=/work",
+    "MISE_TASK_RUN_AUTO_INSTALL=false",
+    "MISE_OFFLINE=true",
+    "mise",
+    "run",
+    "--skip-tools",
+    "--force",
+    "//pkgs/core:build/package"
+  ],
+  "exitCode": 0
+}

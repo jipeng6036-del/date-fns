@@ -1,0 +1,14 @@
+{
+  "extractedFrom": "installed-package-proof.log",
+  "consumer": {
+    "assertions": 60,
+    "records": 6,
+    "version": "4.4.0",
+    "esmURL": "file:///consumer/node_modules/date-fns/parseISO.js",
+    "cjsPath": "/consumer/node_modules/date-fns/parseISO.cjs",
+    "sourceFiles": [
+      "/evidence/timestamp-records.jsonl",
+      "/evidence/actual-dotnet-record.jsonl"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "url": "https://github.com/date-fns/date-fns/pull/3199",
+  "author": {
+    "name": "Fr\u00e9d\u00e9ric Bonnet",
+    "email": "fredericbonnet@free.fr",
+    "user": {
+      "login": "fredericbonnet"
+    }
+  },
+  "sha": "4d51210f62c7a074982195d4d66697cacf1255d4",
+  "state": "OPEN",
+  "merged": false,
+  "headRepository": {
+    "nameWithOwner": "fredericbonnet/date-fns",
+    "licenseInfo": {
+      "spdxId": "MIT"
+    }
+  },
+  "sourcePatch": "original-3199-author.patch",
+  "sourceLicense": "original-3199-LICENSE.md",
+  "portNote": "Original src/parseISO is now pkgs/core/src/parseISO; current test uses Vitest expect. Final code rewrites float-floor fix with exact decimal accumulation. Preserve original author and cherry-pick -x source in the commit series; root owns commits."
+}

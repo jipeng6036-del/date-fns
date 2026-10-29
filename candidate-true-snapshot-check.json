@@ -1,0 +1,18 @@
+{
+  "startedAtUtc": "2026-10-29T10:35:01.827501+00:00",
+  "finishedAtUtc": "2026-10-29T10:35:10.108268+00:00",
+  "seconds": 8.280770299956203,
+  "command": [
+    "docker",
+    "exec",
+    "-w",
+    "/work/pkgs/core",
+    "datefns-precision-20261029",
+    "env",
+    "TZ=utc",
+    "/opt/nodes/node-v26.13.0-linux-x64/bin/node",
+    "scripts/build/localeSnapshots/index.ts",
+    "test"
+  ],
+  "exitCode": 1
+}

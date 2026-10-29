@@ -1,0 +1,101 @@
+{
+  "all95GeneratedSnapshotsByteIdentical": true,
+  "changedOutputs": [
+    {
+      "path": "pkgs/core/src/locale/ar-DZ/snapshot.md",
+      "baselineAndCandidateGeneratedIdentical": true,
+      "onlyMarkdownCellPaddingAndSeparatorWidths": true
+    },
+    {
+      "path": "pkgs/core/src/locale/ar-EG/snapshot.md",
+      "baselineAndCandidateGeneratedIdentical": true,
+      "onlyMarkdownCellPaddingAndSeparatorWidths": true
+    },
+    {
+      "path": "pkgs/core/src/locale/ar-MA/snapshot.md",
+      "baselineAndCandidateGeneratedIdentical": true,
+      "onlyMarkdownCellPaddingAndSeparatorWidths": true
+    },
+    {
+      "path": "pkgs/core/src/locale/ar-SA/snapshot.md",
+      "baselineAndCandidateGeneratedIdentical": true,
+      "onlyMarkdownCellPaddingAndSeparatorWidths": true
+    },
+    {
+      "path": "pkgs/core/src/locale/ar-TN/snapshot.md",
+      "baselineAndCandidateGeneratedIdentical": true,
+      "onlyMarkdownCellPaddingAndSeparatorWidths": true
+    },
+    {
+      "path": "pkgs/core/src/locale/ar/snapshot.md",
+      "baselineAndCandidateGeneratedIdentical": true,
+      "onlyMarkdownCellPaddingAndSeparatorWidths": true
+    },
+    {
+      "path": "pkgs/core/src/locale/bn/snapshot.md",
+      "baselineAndCandidateGeneratedIdentical": true,
+      "onlyMarkdownCellPaddingAndSeparatorWidths": true
+    },
+    {
+      "path": "pkgs/core/src/locale/fa-IR/snapshot.md",
+      "baselineAndCandidateGeneratedIdentical": true,
+      "onlyMarkdownCellPaddingAndSeparatorWidths": true
+    },
+    {
+      "path": "pkgs/core/src/locale/gu/snapshot.md",
+      "baselineAndCandidateGeneratedIdentical": true,
+      "onlyMarkdownCellPaddingAndSeparatorWidths": true
+    },
+    {
+      "path": "pkgs/core/src/locale/hi/snapshot.md",
+      "baselineAndCandidateGeneratedIdentical": true,
+      "onlyMarkdownCellPaddingAndSeparatorWidths": true
+    },
+    {
+      "path": "pkgs/core/src/locale/km/snapshot.md",
+      "baselineAndCandidateGeneratedIdentical": true,
+      "onlyMarkdownCellPaddingAndSeparatorWidths": true
+    },
+    {
+      "path": "pkgs/core/src/locale/kn/snapshot.md",
+      "baselineAndCandidateGeneratedIdentical": true,
+      "onlyMarkdownCellPaddingAndSeparatorWidths": true
+    },
+    {
+      "path": "pkgs/core/src/locale/ta/snapshot.md",
+      "baselineAndCandidateGeneratedIdentical": true,
+      "onlyMarkdownCellPaddingAndSeparatorWidths": true
+    },
+    {
+      "path": "pkgs/core/src/locale/te/snapshot.md",
+      "baselineAndCandidateGeneratedIdentical": true,
+      "onlyMarkdownCellPaddingAndSeparatorWidths": true
+    },
+    {
+      "path": "pkgs/core/src/locale/th/snapshot.md",
+      "baselineAndCandidateGeneratedIdentical": true,
+      "onlyMarkdownCellPaddingAndSeparatorWidths": true
+    },
+    {
+      "path": "pkgs/core/src/locale/ug/snapshot.md",
+      "baselineAndCandidateGeneratedIdentical": true,
+      "onlyMarkdownCellPaddingAndSeparatorWidths": true
+    },
+    {
+      "path": "pkgs/core/src/locale/zh-CN/snapshot.md",
+      "baselineAndCandidateGeneratedIdentical": true,
+      "onlyMarkdownCellPaddingAndSeparatorWidths": false
+    },
+    {
+      "path": "pkgs/core/src/locale/zh-HK/snapshot.md",
+      "baselineAndCandidateGeneratedIdentical": true,
+      "onlyMarkdownCellPaddingAndSeparatorWidths": false
+    },
+    {
+      "path": "pkgs/core/src/locale/zh-TW/snapshot.md",
+      "baselineAndCandidateGeneratedIdentical": true,
+      "onlyMarkdownCellPaddingAndSeparatorWidths": false
+    }
+  ],
+  "all19OnlyMarkdownCellPaddingAndSeparatorWidths": false
+}

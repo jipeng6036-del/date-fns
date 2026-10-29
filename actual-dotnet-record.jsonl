@@ -1,0 +1,1 @@
+{"source":"actual-dotnet-TimeOnly.MaxValue","value":"2022-10-24T23:59:59.9999999+02:00","expected":"2022-10-24T21:59:59.999Z","producer":".NET 10.0.11","powershellVersion":"7.6.5"}

@@ -1,0 +1,29 @@
+{
+  "atUtc": "2026-10-29T12:11:18.333684+00:00",
+  "baseline": "a9739fb3e5384a810e90d7376446f6d84ecc5029",
+  "filesSHA256": {
+    ".github/workflows/code_quality.yaml": "b03c093c5aca7b1f009dc9902e6197bb95716fd5e9deb7b2c15bc9fb8264b922",
+    "pkgs/core/mise.toml": "f78d13889b24bc3b2ee3006d74b6805476308135f5bfdd6bf89289e3d79e0e99",
+    "pkgs/core/scripts/build/localeSnapshots/index.ts": "0ff60cf8e2ba66cdf779aabe4cd3944758d485cedab2c2bc8560e1319a06af74",
+    "CONTRIBUTING.md": "d2cec1d7289e87cc2534545ddc9e8920c94f3ad4acb17a4a9039041c41f3c851",
+    "AGENTS.md": "2fd9bd87360fbf0193c1d4f903db7e73ccebd11820c4835b0ef6bbe3342fed08"
+  },
+  "decision": "CONFIGURED_REQUIRED_COMMAND_PASSED_GENERATION_NOT_SNAPSHOT_ASSERTION",
+  "facts": [
+    "Current PR CI invokes mise test/locales, exactly --test; script only compares for bare test, otherwise writes generated snapshots.",
+    "CONTRIBUTING and AGENTS do not mandate an additional bare-test invocation for this non-locale patch.",
+    "Both identical-environment canonical baseline and candidate generate the same95 outputs.19 differ from committed snapshots:16 padding/width only;3 stale zh values. No snapshot changes included.",
+    "Additional bare-test diagnostic failed on ar-DZ for both baseline and candidate. It is neither recorded as PASS nor used to waive a required check.",
+    "Hosted CI will run only after PR creation. No claim that snapshot assertion or hosted CI passed."
+  ],
+  "evidence": [
+    "canonical-quality-locales.log",
+    "baseline-official-snapshot-generation.json",
+    "SNAPSHOT_GENERATION_COMPARISON.json",
+    "SNAPSHOT_SEMANTIC_COMPARISON.json",
+    "baseline-true-snapshot-check.json",
+    "candidate-true-snapshot-check.json",
+    "POST_TASK_MUTATIONS.json"
+  ],
+  "productFilesWritten": false
+}

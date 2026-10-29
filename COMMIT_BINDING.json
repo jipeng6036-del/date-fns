@@ -1,0 +1,55 @@
+{
+  "completedAtUtc": "2026-10-29T12:20:37.354772+00:00",
+  "status": "LOCAL_AUTHOR_PRESERVING_COMMIT_SERIES_COMPLETE_NO_PUBLIC_WRITES",
+  "checkout": "F:\\Github-PR\\ci-evidence\\run-next-js-runtime-20261029\\source",
+  "branch": "fix/parseiso-submillisecond-precision",
+  "base": "a9739fb3e5384a810e90d7376446f6d84ecc5029",
+  "HEAD": "2fad341430a4b045e07dad518c1964fd5c0cc385",
+  "tree": "f33c3d17040806a2c91c55bb28d0ae3d763fcdee",
+  "fullTreeBlobModeMatch": true,
+  "fileCount": 2070,
+  "workingTree": "clean",
+  "upstreamDiffFiles": [
+    "pkgs/core/src/parseISO/index.ts",
+    "pkgs/core/src/parseISO/test.ts"
+  ],
+  "originalSourceCommit": "4d51210f62c7a074982195d4d66697cacf1255d4",
+  "originalAppliedCommit": "a453d23b8d94a856f283e488337509d0fc759bea",
+  "originalAuthorRawPreserved": "author Frédéric Bonnet <fredericbonnet@free.fr> 1664810402 +0000",
+  "originalSourceLine": "(cherry picked from commit 4d51210f62c7a074982195d4d66697cacf1255d4)",
+  "genuineCherryPickRawLogs": [
+    "11-cherry-pick.json",
+    "11-cherry-pick.stdout",
+    "11-cherry-pick.stderr",
+    "12-MERGE_MSG.original",
+    "20-cherry-continue.json",
+    "20-cherry-continue.stdout",
+    "22-applied-commit"
+  ],
+  "conflictResolution": "Only two old src/parseISO paths created by this cherry-pick removed; sealed minimal ports staged at current pkgs/core paths.",
+  "finalAuthorRaw": "author jipeng6036-del <jipeng6036@gmail.com> 1793276435 -0700",
+  "finalCommitterRaw": "committer jipeng6036-del <jipeng6036@gmail.com> 1793276435 -0700",
+  "normalCommit": true,
+  "amendPerformed": false,
+  "hooksSkipped": false,
+  "hookChangedTestedTree": false,
+  "finalCommitLog": [
+    "32-final-commit.json",
+    "32-final-commit.stdout",
+    "32-final-commit.stderr",
+    "42-final-commit-raw"
+  ],
+  "retainedStash": {
+    "refAtCreation": "stash@{0}",
+    "oid": "5203fba6e8da70db0d3d1427264e01c2a71f096a",
+    "tree": "f33c3d17040806a2c91c55bb28d0ae3d763fcdee",
+    "dropPerformed": false
+  },
+  "retainedStashVerified": true,
+  "recoveryBackups": "BACKUP_RECEIPT.json",
+  "frozenEvidenceFilesUntouched": 60,
+  "tests": "Not rerun: final Git tree/blob/mode and two raw source SHA256 exactly match previously tested frozen canonical tree.",
+  "networkGitOperations": false,
+  "forkPushPRPerformed": false,
+  "sourceWriteOwnership": "Handed back to root; worker will not write source after receipt."
+}

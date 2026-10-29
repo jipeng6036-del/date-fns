@@ -1,0 +1,18 @@
+{
+  "startedAtUtc": "2026-10-29T10:25:06.047555+00:00",
+  "finishedAtUtc": "2026-10-29T10:27:50.409557+00:00",
+  "seconds": 164.36202479992062,
+  "command": [
+    "docker",
+    "exec",
+    "-w",
+    "/work",
+    "datefns-precision-20261029",
+    "taskset",
+    "-c",
+    "8-11",
+    "bash",
+    "/evidence/canonical-node-matrix.sh"
+  ],
+  "exitCode": 0
+}

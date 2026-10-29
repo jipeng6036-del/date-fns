@@ -1,0 +1,415 @@
+mise WARN  Failed to resolve tool version list for watchexec: [/work/mise.toml] watchexec@latest: no versions found for watchexec
+mise WARN  Failed to resolve tool version list for gh: [/work/mise.toml] gh@latest: no versions found for gh
+[//pkgs/core:test/browser] $ pnpm vitest run --project browser
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.0.1 [39m[90m/work/pkgs/core[39m
+
+[90mstderr[2m | src/parse/test.ts[2m:49[22m[2m[2m > [22m[2mparse[2m > [22m[2mera[2m > [22m[2mwith week-numbering year
+[22m[39mUse `y` instead of `Y` (in `Y GGGGG`) for formatting years to the input `44 B`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:150[22m[2m[2m > [22m[2mparse[2m > [22m[2mcalendar year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when y is used after Y
+[22m[39mUse `y` instead of `Y` (in `Y y`) for formatting years to the input `2019 2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:150[22m[2m[2m > [22m[2mparse[2m > [22m[2mcalendar year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when y is used after Y
+[22m[39mUse `y` instead of `Y` (in `Y y`) for formatting years to the input `2019 2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:165[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mnumeric
+[22m[39mUse `y` instead of `Y` (in `Y`) for formatting years to the input `2002`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:191[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mthree-digit zero-padding
+[22m[39mUse `yyy` instead of `YYY` (in `YYY`) for formatting years to the input `123`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:203[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mspecified amount of digits
+[22m[39mUse `yyyyyy` instead of `YYYYYY` (in `YYYYYY`) for formatting years to the input `000001`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:211[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mallows to specify `weekStartsOn` and `firstWeekContainsDate` in options
+[22m[39mUse `y` instead of `Y` (in `Y`) for formatting years to the input `2018`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after y
+[22m[39mUse `y` instead of `Y` (in `y Y`) for formatting years to the input `2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after y
+[22m[39mUse `y` instead of `Y` (in `y Y`) for formatting years to the input `2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after Y
+[22m[39mUse `y` instead of `Y` (in `Y Y`) for formatting years to the input `2019 2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after Y
+[22m[39mUse `y` instead of `Y` (in `Y Y`) for formatting years to the input `2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after Y
+[22m[39mUse `y` instead of `Y` (in `Y Y`) for formatting years to the input `2019 2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after Y
+[22m[39mUse `y` instead of `Y` (in `Y Y`) for formatting years to the input `2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after R
+[22m[39mUse `y` instead of `Y` (in `R Y`) for formatting years to the input `2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after R
+[22m[39mUse `y` instead of `Y` (in `R Y`) for formatting years to the input `2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after u
+[22m[39mUse `y` instead of `Y` (in `u Y`) for formatting years to the input `2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after u
+[22m[39mUse `y` instead of `Y` (in `u Y`) for formatting years to the input `2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after Q
+[22m[39mUse `y` instead of `Y` (in `Q Y`) for formatting years to the input `2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after Q
+[22m[39mUse `y` instead of `Y` (in `Q Y`) for formatting years to the input `2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after q
+[22m[39mUse `y` instead of `Y` (in `q Y`) for formatting years to the input `2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after q
+[22m[39mUse `y` instead of `Y` (in `q Y`) for formatting years to the input `2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after M
+[22m[39mUse `y` instead of `Y` (in `M Y`) for formatting years to the input `2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after M
+[22m[39mUse `y` instead of `Y` (in `M Y`) for formatting years to the input `2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after L
+[22m[39mUse `y` instead of `Y` (in `L Y`) for formatting years to the input `2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after L
+[22m[39mUse `y` instead of `Y` (in `L Y`) for formatting years to the input `2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after I
+[22m[39mUse `y` instead of `Y` (in `I Y`) for formatting years to the input `2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after I
+[22m[39mUse `y` instead of `Y` (in `I Y`) for formatting years to the input `2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after d
+[22m[39mUse `y` instead of `Y` (in `d Y`) for formatting years to the input `2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after d
+[22m[39mUse `y` instead of `Y` (in `d Y`) for formatting years to the input `2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after D
+[22m[39mUse `y` instead of `Y` (in `D Y`) for formatting years to the input `2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after D
+[22m[39mUse `y` instead of `Y` (in `D Y`) for formatting years to the input `2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after i
+[22m[39mUse `y` instead of `Y` (in `i Y`) for formatting years to the input `2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after i
+[22m[39mUse `y` instead of `Y` (in `i Y`) for formatting years to the input `2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after t
+[22m[39mUse `y` instead of `Y` (in `t Y`) for formatting years to the input `2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after t
+[22m[39mUse `y` instead of `Y` (in `t Y`) for formatting years to the input `2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after T
+[22m[39mUse `y` instead of `Y` (in `T Y`) for formatting years to the input `2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:239[22m[2m[2m > [22m[2mparse[2m > [22m[2mlocal week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Y is used after T
+[22m[39mUse `y` instead of `Y` (in `T Y`) for formatting years to the input `2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:304[22m[2m[2m > [22m[2mparse[2m > [22m[2mISO week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when R is used after Y
+[22m[39mUse `y` instead of `Y` (in `Y R`) for formatting years to the input `2019 2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:304[22m[2m[2m > [22m[2mparse[2m > [22m[2mISO week-numbering year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when R is used after Y
+[22m[39mUse `y` instead of `Y` (in `Y R`) for formatting years to the input `2019 2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:362[22m[2m[2m > [22m[2mparse[2m > [22m[2mextended year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when u is used after Y
+[22m[39mUse `y` instead of `Y` (in `Y u`) for formatting years to the input `2019 2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:362[22m[2m[2m > [22m[2mparse[2m > [22m[2mextended year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when u is used after Y
+[22m[39mUse `y` instead of `Y` (in `Y u`) for formatting years to the input `2019 2019`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:450[22m[2m[2m > [22m[2mparse[2m > [22m[2mquarter (formatting)[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Q is used after Y
+[22m[39mUse `y` instead of `Y` (in `Y Q`) for formatting years to the input `2019 1`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:450[22m[2m[2m > [22m[2mparse[2m > [22m[2mquarter (formatting)[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when Q is used after Y
+[22m[39mUse `y` instead of `Y` (in `Y Q`) for formatting years to the input `2019 1`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:516[22m[2m[2m > [22m[2mparse[2m > [22m[2mquarter (stand-alone)[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when q is used after Y
+[22m[39mUse `y` instead of `Y` (in `Y q`) for formatting years to the input `2019 1`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:516[22m[2m[2m > [22m[2mparse[2m > [22m[2mquarter (stand-alone)[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when q is used after Y
+[22m[39mUse `y` instead of `Y` (in `Y q`) for formatting years to the input `2019 1`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:581[22m[2m[2m > [22m[2mparse[2m > [22m[2mmonth (formatting)[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when M is used after Y
+[22m[39mUse `y` instead of `Y` (in `Y M`) for formatting years to the input `2019 1`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:581[22m[2m[2m > [22m[2mparse[2m > [22m[2mmonth (formatting)[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when M is used after Y
+[22m[39mUse `y` instead of `Y` (in `Y M`) for formatting years to the input `2019 1`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:646[22m[2m[2m > [22m[2mparse[2m > [22m[2mmonth (stand-alone)[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when L is used after Y
+[22m[39mUse `y` instead of `Y` (in `Y L`) for formatting years to the input `2019 1`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:646[22m[2m[2m > [22m[2mparse[2m > [22m[2mmonth (stand-alone)[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when L is used after Y
+[22m[39mUse `y` instead of `Y` (in `Y L`) for formatting years to the input `2019 1`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:755[22m[2m[2m > [22m[2mparse[2m > [22m[2mISO week of year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when I is used after Y
+[22m[39mUse `y` instead of `Y` (in `Y I`) for formatting years to the input `2019 1`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:755[22m[2m[2m > [22m[2mparse[2m > [22m[2mISO week of year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when I is used after Y
+[22m[39mUse `y` instead of `Y` (in `Y I`) for formatting years to the input `2019 1`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:804[22m[2m[2m > [22m[2mparse[2m > [22m[2mday of month[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when d is used after Y
+[22m[39mUse `y` instead of `Y` (in `Y d`) for formatting years to the input `2019 1`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:804[22m[2m[2m > [22m[2mparse[2m > [22m[2mday of month[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when d is used after Y
+[22m[39mUse `y` instead of `Y` (in `Y d`) for formatting years to the input `2019 1`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:838[22m[2m[2m > [22m[2mparse[2m > [22m[2mday of year[2m > [22m[2mthree-digit zero-padding
+[22m[39mUse `ddd` instead of `DDD` (in `DDD`) for formatting days of the month to the input `001`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:843[22m[2m[2m > [22m[2mparse[2m > [22m[2mday of year[2m > [22m[2mspecified amount of digits
+[22m[39mUse `dddddd` instead of `DDDDDD` (in `DDDDDD`) for formatting days of the month to the input `000200`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:867[22m[2m[2m > [22m[2mparse[2m > [22m[2mday of year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when D is used after Y
+[22m[39mUse `y` instead of `Y` (in `Y D`) for formatting years to the input `2019 1`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:867[22m[2m[2m > [22m[2mparse[2m > [22m[2mday of year[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when D is used after Y
+[22m[39mUse `y` instead of `Y` (in `Y D`) for formatting years to the input `2019 1`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:996[22m[2m[2m > [22m[2mparse[2m > [22m[2mISO day of week (formatting)[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when i is used after Y
+[22m[39mUse `y` instead of `Y` (in `Y i`) for formatting years to the input `2019 1`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:996[22m[2m[2m > [22m[2mparse[2m > [22m[2mISO day of week (formatting)[2m > [22m[2mvalidation[2m > [22m[2mthrows an error when i is used after Y
+[22m[39mUse `y` instead of `Y` (in `Y i`) for formatting years to the input `2019 1`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:1938[22m[2m[2m > [22m[2mparse[2m > [22m[2mcommon formats[2m > [22m[2mISO day of year date
+[22m[39mUse `ddd` instead of `DDD` (in `yyyyDDD'T'HHmmss`) for formatting days of the month to the input `123T235959`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:1995[22m[2m[2m > [22m[2mparse[2m > [22m[2mwith `options.strictValidation` = true[2m > [22m[2mlocal week-numbering year[2m > [22m[2mreturns `Invalid Date` for year zero
+[22m[39mUse `y` instead of `Y` (in `Y`) for formatting years to the input `0`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:2278[22m[2m[2m > [22m[2mparse[2m > [22m[2museAdditionalWeekYearTokens and useAdditionalDayOfYearTokens options[2m > [22m[2mthrows an error if D token is used
+[22m[39mUse `d` instead of `D` (in `yyyy D`) for formatting days of the month to the input `5`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:2296[22m[2m[2m > [22m[2mparse[2m > [22m[2museAdditionalWeekYearTokens and useAdditionalDayOfYearTokens options[2m > [22m[2mthrows an error if DD token is used
+[22m[39mUse `dd` instead of `DD` (in `yyyy DD`) for formatting days of the month to the input `05`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:2314[22m[2m[2m > [22m[2mparse[2m > [22m[2museAdditionalWeekYearTokens and useAdditionalDayOfYearTokens options[2m > [22m[2mthrows an error if YY token is used
+[22m[39mUse `yy` instead of `YY` (in `YY w`) for formatting years to the input `16 1`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/parse/test.ts[2m:2332[22m[2m[2m > [22m[2mparse[2m > [22m[2museAdditionalWeekYearTokens and useAdditionalDayOfYearTokens options[2m > [22m[2mthrows an error if YYYY token is used
+[22m[39mUse `yyyy` instead of `YYYY` (in `YYYY w`) for formatting years to the input `2016 1`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/parse/test.ts [2m([22m[2m540 tests[22m[2m)[22m[32m 169[2mms[22m[39m
+[90mstderr[2m | src/format/test.ts[2m:193[22m[2m[2m > [22m[2mformat[2m > [22m[2myear[2m > [22m[2mlocal week-numbering year[2m > [22m[2m1 BC formats as 1
+[22m[39mUse `y` instead of `Y` (in `Y`) for formatting years to the input `Sun Jul 02 0000 00:00:00 GMT+0000 (Coordinated Universal Time)`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/format/test.ts[2m:201[22m[2m[2m > [22m[2mformat[2m > [22m[2myear[2m > [22m[2mlocal week-numbering year[2m > [22m[2m2 BC formats as 2
+[22m[39mUse `y` instead of `Y` (in `Y`) for formatting years to the input `Fri Jul 02 -0001 00:00:00 GMT+0000 (Coordinated Universal Time)`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/format/test.ts[2m:747[22m[2m[2m > [22m[2mformat[2m > [22m[2medge cases[2m > [22m[2mhandles dates before 100 AD
+[22m[39mUse `y` instead of `Y` (in `Y ww i`) for formatting years to the input `Mon Dec 31 0007 00:00:00 GMT+0000 (Coordinated Universal Time)`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/format/test.ts[2m:814[22m[2m[2m > [22m[2mformat[2m > [22m[2museAdditionalWeekYearTokens and useAdditionalDayOfYearTokens options[2m > [22m[2mthrows an error if D token is used
+[22m[39mUse `d` instead of `D` (in `yyyy-MM-D`) for formatting days of the month to the input `Fri Apr 04 1986 10:32:55 GMT+0000 (Coordinated Universal Time)`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/format/test.ts[2m:825[22m[2m[2m > [22m[2mformat[2m > [22m[2museAdditionalWeekYearTokens and useAdditionalDayOfYearTokens options[2m > [22m[2mthrows an error if DD token is used
+[22m[39mUse `dd` instead of `DD` (in `yyyy-MM-DD`) for formatting days of the month to the input `Fri Apr 04 1986 10:32:55 GMT+0000 (Coordinated Universal Time)`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/format/test.ts[2m:838[22m[2m[2m > [22m[2mformat[2m > [22m[2museAdditionalWeekYearTokens and useAdditionalDayOfYearTokens options[2m > [22m[2mthrows an error if YY token is used
+[22m[39mUse `yy` instead of `YY` (in `YY-MM-dd`) for formatting years to the input `Fri Apr 04 1986 10:32:55 GMT+0000 (Coordinated Universal Time)`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/format/test.ts[2m:851[22m[2m[2m > [22m[2mformat[2m > [22m[2museAdditionalWeekYearTokens and useAdditionalDayOfYearTokens options[2m > [22m[2mthrows an error if YYYY token is used
+[22m[39mUse `yyyy` instead of `YYYY` (in `YYYY-MM-dd`) for formatting years to the input `Fri Apr 04 1986 10:32:55 GMT+0000 (Coordinated Universal Time)`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/format/test.ts [2m([22m[2m108 tests[22m[2m)[22m[32m 26[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/intlFormatDistance/test.ts [2m([22m[2m89 tests[22m[2m)[22m[32m 16[2mms[22m[39m
+[90mstderr[2m | src/setDefaultOptions/test.ts[2m:486[22m[2m[2m > [22m[2msetDefaultOptions[2m > [22m[2mfirstWeekContainsDate[2m > [22m[2mparse
+[22m[39mUse `y` instead of `Y` (in `Y`) for formatting years to the input `2018`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/setDefaultOptions/test.ts[2m:486[22m[2m[2m > [22m[2msetDefaultOptions[2m > [22m[2mfirstWeekContainsDate[2m > [22m[2mparse
+[22m[39mUse `y` instead of `Y` (in `Y`) for formatting years to the input `2018`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+[90mstderr[2m | src/setDefaultOptions/test.ts[2m:486[22m[2m[2m > [22m[2msetDefaultOptions[2m > [22m[2mfirstWeekContainsDate[2m > [22m[2mparse
+[22m[39mUse `y` instead of `Y` (in `Y`) for formatting years to the input `2018`; see: https://github.com/date-fns/date-fns/blob/master/docs/unicodeTokens.md
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/setDefaultOptions/test.ts [2m([22m[2m27 tests[22m[2m)[22m[32m 11[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/parseISO/test.ts [2m([22m[2m90 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/formatDistanceStrict/test.ts [2m([22m[2m48 tests[22m[2m)[22m[32m 6[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/differenceInCalendarDays/test.ts [2m([22m[2m17 tests[22m[2m | [22m[33m1 skipped[39m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/getOverlappingDaysInIntervals/test.ts [2m([22m[2m21 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/formatDistanceToNowStrict/test.ts [2m([22m[2m43 tests[22m[2m)[22m[32m 14[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/differenceInDays/test.ts [2m([22m[2m16 tests[22m[2m | [22m[33m1 skipped[39m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/eachWeekOfInterval/test.ts [2m([22m[2m22 tests[22m[2m)[22m[32m 5[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/areIntervalsOverlapping/test.ts [2m([22m[2m19 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/eachMonthOfInterval/test.ts [2m([22m[2m22 tests[22m[2m)[22m[32m 5[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/roundToNearestMinutes/test.ts [2m([22m[2m23 tests[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/eachHourOfInterval/test.ts [2m([22m[2m21 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/eachMinuteOfInterval/test.ts [2m([22m[2m20 tests[22m[2m)[22m[32m 5[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/eachDayOfInterval/test.ts [2m([22m[2m21 tests[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/intervalToDuration/test.ts [2m([22m[2m20 tests[22m[2m)[22m[32m 6[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/formatDistance/test.ts [2m([22m[2m30 tests[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/roundToNearestHours/test.ts [2m([22m[2m21 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/eachYearOfInterval/test.ts [2m([22m[2m21 tests[22m[2m)[22m[32m 7[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/eachQuarterOfInterval/test.ts [2m([22m[2m22 tests[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/parseJSON/test.ts [2m([22m[2m21 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/addMonths/test.ts [2m([22m[2m18 tests[22m[2m | [22m[33m7 skipped[39m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/differenceInHours/test.ts [2m([22m[2m21 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/differenceInCalendarWeeks/test.ts [2m([22m[2m20 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/differenceInQuarters/test.ts [2m([22m[2m21 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/eachWeekendOfInterval/test.ts [2m([22m[2m13 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/differenceInWeeks/test.ts [2m([22m[2m21 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/formatDistanceToNow/test.ts [2m([22m[2m26 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/differenceInMonths/test.ts [2m([22m[2m21 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/differenceInYears/test.ts [2m([22m[2m20 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/set/test.ts [2m([22m[2m23 tests[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/differenceInBusinessDays/test.ts [2m([22m[2m19 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/addBusinessDays/test.ts [2m([22m[2m16 tests[22m[2m | [22m[33m1 skipped[39m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/addDays/test.ts [2m([22m[2m16 tests[22m[2m | [22m[33m7 skipped[39m[2m)[22m[32m 1[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/differenceInCalendarISOWeekYears/test.ts [2m([22m[2m16 tests[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/differenceInSeconds/test.ts [2m([22m[2m18 tests[22m[2m)[22m[32m 1[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/setDay/test.ts [2m([22m[2m20 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/lastDayOfWeek/test.ts [2m([22m[2m15 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/differenceInISOWeekYears/test.ts [2m([22m[2m16 tests[22m[2m)[22m[32m 5[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/differenceInCalendarISOWeeks/test.ts [2m([22m[2m16 tests[22m[2m)[22m[32m 1[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/startOfWeek/test.ts [2m([22m[2m15 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/endOfWeek/test.ts [2m([22m[2m15 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/add/test.ts [2m([22m[2m14 tests[22m[2m | [22m[33m1 skipped[39m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/formatRelative/test.ts [2m([22m[2m16 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/differenceInMinutes/test.ts [2m([22m[2m16 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/differenceInCalendarQuarters/test.ts [2m([22m[2m15 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/differenceInCalendarMonths/test.ts [2m([22m[2m15 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/differenceInCalendarYears/test.ts [2m([22m[2m15 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/startOfWeekYear/test.ts [2m([22m[2m11 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/fp/_lib/convertToFP/test.ts [2m([22m[2m13 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isWithinInterval/test.ts [2m([22m[2m13 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/lightFormat/test.ts [2m([22m[2m20 tests[22m[2m)[22m[32m 5[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/sub/test.ts [2m([22m[2m13 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/constructFrom/test.ts [2m([22m[2m12 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/setWeekYear/test.ts [2m([22m[2m13 tests[22m[2m)[22m[32m 5[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isSameWeek/test.ts [2m([22m[2m13 tests[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/closestTo/test.ts [2m([22m[2m11 tests[22m[2m)[22m[32m 5[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/clamp/test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isSameISOWeekYear/test.ts [2m([22m[2m11 tests[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/setWeek/test.ts [2m([22m[2m12 tests[22m[2m)[22m[32m 5[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/nextDay/test.ts [2m([22m[2m11 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/previousDay/test.ts [2m([22m[2m11 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/getWeekOfMonth/test.ts [2m([22m[2m12 tests[22m[2m)[22m[32m 12[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/startOfISOWeekYear/test.ts [2m([22m[2m10 tests[22m[2m)[22m[32m 5[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/setISODay/test.ts [2m([22m[2m14 tests[22m[2m)[22m[32m 9[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/setISOWeekYear/test.ts [2m([22m[2m11 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/subBusinessDays/test.ts [2m([22m[2m11 tests[22m[2m)[22m[32m 5[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isSameQuarter/test.ts [2m([22m[2m10 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/startOfYear/test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/setQuarter/test.ts [2m([22m[2m11 tests[22m[2m)[22m[32m 6[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/interval/test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 14[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/setMonth/test.ts [2m([22m[2m11 tests[22m[2m)[22m[32m 15[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/subISOWeekYears/test.ts [2m([22m[2m10 tests[22m[2m)[22m[32m 17[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/lastDayOfDecade/test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 7[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/addQuarters/test.ts [2m([22m[2m11 tests[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/formatISODuration/test.ts [2m([22m[2m10 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/subQuarters/test.ts [2m([22m[2m11 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/subMonths/test.ts [2m([22m[2m11 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/endOfMonth/test.ts [2m([22m[2m10 tests[22m[2m)[22m[32m 10[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isSameISOWeek/test.ts [2m([22m[2m10 tests[22m[2m)[22m[32m 6[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/intlFormat/test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 5[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/subYears/test.ts [2m([22m[2m11 tests[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/formatISO/test.ts [2m([22m[2m7 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/endOfISOWeekYear/test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/setISOWeek/test.ts [2m([22m[2m10 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/addYears/test.ts [2m([22m[2m11 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isSameHour/test.ts [2m([22m[2m10 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isSameMonth/test.ts [2m([22m[2m10 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isSameDay/test.ts [2m([22m[2m10 tests[22m[2m)[22m[32m 7[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/lastDayOfISOWeekYear/test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/addISOWeekYears/test.ts [2m([22m[2m10 tests[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/startOfISOWeek/test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/lastDayOfISOWeek/test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/eachWeekendOfMonth/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/getWeek/test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/getWeeksInMonth/test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/getWeekYear/test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/endOfDecade/test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/lastDayOfMonth/test.ts [2m([22m[2m10 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/eachWeekendOfYear/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 31[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/setMilliseconds/test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isDate/test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 21[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/startOfDecade/test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/setSeconds/test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/addMinutes/test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/min/test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/max/test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/addMilliseconds/test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/previousWednesday/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/addHours/test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 5[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/nextWednesday/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/subMilliseconds/test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/setMinutes/test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/nextThursday/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 1[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/nextSaturday/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/constructNow/test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/nextTuesday/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/getISOWeek/test.ts [2m([22m[2m11 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/nextFriday/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/subHours/test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/previousSaturday/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 1[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/nextMonday/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/nextSunday/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/setDayOfYear/test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/endOfISOWeek/test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/endOfQuarter/test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/setHours/test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/previousThursday/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/setDate/test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/startOfMinute/test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/subDays/test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/endOfYear/test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/subSeconds/test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/addSeconds/test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/previousTuesday/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/lastDayOfQuarter/test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/subWeeks/test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/previousMonday/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/setYear/test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/previousFriday/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/previousSunday/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/startOfMonth/test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/startOfSecond/test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/lastDayOfYear/test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/startOfHour/test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/startOfDay/test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/subMinutes/test.ts [2m([22m[2m9 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/endOfDay/test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/endOfSecond/test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/startOfQuarter/test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/endOfMinute/test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/endOfHour/test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/toDate/test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/endOfYesterday/test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 6[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isSameYear/test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 9[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/startOfYesterday/test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 5[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/startOfTomorrow/test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/compareDesc/test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 1[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/formatRFC3339/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/compareAsc/test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/getISOWeeksInYear/test.ts [2m([22m[2m7 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/differenceInMilliseconds/test.ts [2m([22m[2m7 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/_lib/getRoundingMethod/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isThisWeek/test.ts [2m([22m[2m7 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/formatISO9075/test.ts [2m([22m[2m7 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/closestIndexTo/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/getISOWeekYear/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isFirstDayOfMonth/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isLastDayOfMonth/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/addWeeks/test.ts [2m([22m[2m7 tests[22m[2m)[22m[32m 5[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/getDefaultOptions/test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/getDaysInYear/test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isLeapYear/test.ts [2m([22m[2m8 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isThisQuarter/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 5[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/endOfTomorrow/test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isThisHour/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 5[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isThisMonth/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/getDaysInMonth/test.ts [2m([22m[2m7 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isSaturday/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isThisISOWeek/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isWeekend/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isThisYear/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isTuesday/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/startOfToday/test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isMonday/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isFriday/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isSunday/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isYesterday/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isTomorrow/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/formatDuration/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/milliseconds/test.ts [2m([22m[2m10 tests[22m[2m)[22m[32m 5[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/getDayOfYear/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/getYear/test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isBefore/test.ts [2m([22m[2m7 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isAfter/test.ts [2m([22m[2m7 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isWednesday/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/getQuarter/test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/getISODay/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isToday/test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isThursday/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 1[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/getMonth/test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isSameSecond/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/endOfToday/test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isSameMinute/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/getDecade/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/getMinutes/test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/fromUnixTime/test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/getDate/test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/getHours/test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isEqual/test.ts [2m([22m[2m6 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/getDay/test.ts [2m([22m[2m5 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/locale/fr/test.ts [2m([22m[2m2 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/_lib/getTimezoneOffsetInMilliseconds/test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isThisSecond/test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 5[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isThisMinute/test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/locale/zh-CN/test.ts [2m([22m[2m2 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/locale/zh-HK/test.ts [2m([22m[2m2 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/locale/zh-TW/test.ts [2m([22m[2m2 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/daysToWeeks/test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isFuture/test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isPast/test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 4[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/getUnixTime/test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/millisecondsToSeconds/test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/millisecondsToMinutes/test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/millisecondsToHours/test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/hoursToSeconds/test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/minutesToMilliseconds/test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/hoursToMilliseconds/test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/hoursToMinutes/test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/secondsToMinutes/test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/quartersToMonths/test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/transpose/test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/monthsToQuarters/test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/secondsToHours/test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isValid/test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/minutesToHours/test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/yearsToQuarters/test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 3[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/quartersToYears/test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/getMilliseconds/test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/monthsToYears/test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/yearsToMonths/test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/minutesToSeconds/test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/yearsToDays/test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/getTime/test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/weeksToDays/test.ts [2m([22m[2m4 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/formatRFC7231/test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/getSeconds/test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isMatch/test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 6[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/_lib/addLeadingZeros/test.ts [2m([22m[2m1 test[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/secondsToMilliseconds/test.ts [2m([22m[2m2 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m [30m[42m browser (chromium) [49m[39m src/isExists/test.ts [2m([22m[2m2 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m253 passed[39m[22m[90m (253)[39m
+[2m      Tests [22m [1m[32m3181 passed[39m[22m[2m | [22m[33m18 skipped[39m[90m (3199)[39m
+[2m   Start at [22m 10:27:56
+[2m   Duration [22m 41.94s[2m (import 54%, worker 41%, tests 5%)[22m
+

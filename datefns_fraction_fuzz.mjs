@@ -1,0 +1,42 @@
+import { parseISO } from '../run-next-js-runtime-20261029/source/pkgs/core/src/parseISO/index.ts';
+import { createHash } from 'node:crypto';
+import { readFileSync, writeFileSync } from 'node:fs';
+
+const implementation = new URL('../run-next-js-runtime-20261029/source/pkgs/core/src/parseISO/index.ts', import.meta.url);
+const hash = () => createHash('sha256').update(readFileSync(implementation)).digest('hex');
+const before = hash();
+let seed = 173901;
+const random = (limit) => ((seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0) % limit);
+const pad = (n) => String(n).padStart(2, '0');
+const results = [];
+const errors = [];
+for (let i = 0; i < 3000; i++) {
+  const mode = i % 4;
+  const h = random(24), m = mode === 0 ? 0 : random(60), s = mode < 2 ? 0 : random(60);
+  const length = 1 + random(70);
+  const fraction = () => i % 7 === 0 ? '9'.repeat(length) : Array.from({ length }, () => random(10)).join('');
+  const hf = mode === 0 || mode === 3 ? fraction() : '';
+  const mf = mode === 1 || mode === 3 ? fraction() : '';
+  const sf = mode >= 2 ? fraction() : '';
+  const separator = i % 2 ? ',' : '.';
+  const unit = (value, digits) => pad(value) + (digits ? separator + digits : '');
+  const time = mode === 0 ? unit(h, hf) : mode === 1 ? `${pad(h)}:${unit(m, mf)}` : `${unit(h, hf)}:${unit(m, mf)}:${unit(s, sf)}`;
+  const date = i % 3 === 0 ? '1969-12-31' : '2014-02-11';
+  const offset = [0, 330, -480][i % 3];
+  const suffix = offset === 0 ? 'Z' : `${offset > 0 ? '+' : '-'}${pad(Math.trunc(Math.abs(offset) / 60))}:${pad(Math.abs(offset) % 60)}`;
+  const input = `${date}T${time}${suffix}`;
+  const scaleLength = Math.max(hf.length, mf.length, sf.length);
+  const scaled = (digits, multiplier) => digits ? BigInt(digits) * BigInt(multiplier) * 10n ** BigInt(scaleLength - digits.length) : 0n;
+  const fractionalMs = (scaled(hf, 3600000) + scaled(mf, 60000) + scaled(sf, 1000)) / 10n ** BigInt(scaleLength);
+  const expectedMs = Date.parse(`${date}T00:00:00Z`) + h * 3600000 + m * 60000 + s * 1000 + Number(fractionalMs) - offset * 60000;
+  const actualMs = +parseISO(input);
+  const pass = actualMs === expectedMs;
+  if (!pass) errors.push({ input, expectedMs, actualMs });
+  results.push({ input, expectedMs, actualMs, pass });
+}
+const after = hash();
+if (before !== after) throw new Error('Implementation changed during the independent run');
+const report = { atUtc: new Date().toISOString(), node: process.version, platform: process.platform, sourceImplementationSHA256: before, seed: 173901, cases: results.length, passed: results.length - errors.length, failed: errors.length, method: 'Actual exported parseISO source entry point; independent test-only BigInt rational oracle with 1..70-digit decimal hours/minutes/seconds, multiple-fraction legacy inputs, comma/dot, pre-epoch/positive dates and three offsets. No helper calls or mocks; not an installed package or browser proof.', errors, results };
+writeFileSync(new URL('./datefns-fraction-fuzz.json', import.meta.url), JSON.stringify(report, null, 2) + '\n');
+console.log(JSON.stringify({ cases: report.cases, passed: report.passed, failed: report.failed, sourceImplementationSHA256: before, firstErrors: errors.slice(0, 8) }));
+if (errors.length) process.exitCode = 1;

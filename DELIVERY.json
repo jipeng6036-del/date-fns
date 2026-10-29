@@ -1,0 +1,144 @@
+{
+  "completedAtUtc": "2026-10-29T12:11:59.975767+00:00",
+  "status": "LOCAL_REQUIRED_COMMANDS_COMPLETE_READY_FOR_ROOT_REVIEW",
+  "sourceOwnership": "Handed back to root after this delivery; worker will not edit product source further.",
+  "repository": "date-fns/date-fns",
+  "branch": "fix/parseiso-submillisecond-precision",
+  "checkout": "F:\\Github-PR\\ci-evidence\\run-next-js-runtime-20261029\\source",
+  "baseline": "a9739fb3e5384a810e90d7376446f6d84ecc5029",
+  "candidateTree": "f33c3d17040806a2c91c55bb28d0ae3d763fcdee",
+  "trackedFiles": 2070,
+  "productFiles": [
+    "pkgs/core/src/parseISO/index.ts",
+    "pkgs/core/src/parseISO/test.ts"
+  ],
+  "original": {
+    "pr": "https://github.com/date-fns/date-fns/pull/3199",
+    "issue": "https://github.com/date-fns/date-fns/issues/3194",
+    "stateAtAdmission": "OPEN and unmerged",
+    "commit": "4d51210f62c7a074982195d4d66697cacf1255d4",
+    "author": "Frederic Bonnet / @fredericbonnet",
+    "license": "MIT",
+    "localGitObjectAvailable": true,
+    "originalCommitMetadata": "ORIGINAL_COMMIT.json",
+    "originalRawPatch": "original-3199-author.patch",
+    "licenseAtOriginalCommit": "original-3199-LICENSE.md",
+    "minimalCurrentPathPort": [
+      "original-ported-parseISO-index.ts",
+      "original-ported-parseISO-test.ts"
+    ],
+    "portDescription": "ORIGINAL_PORT.json",
+    "commitOwner": "root; preserve original author and cherry-pick -x source, then commit improved final tree"
+  },
+  "increment": "Exact decimal digit accumulation fixes sub-ms carry, avoids original floor regressions on standard 2014 .001 timestamps, and handles precise pre-epoch/hour/minute/second fractions and date-extension contexts without dependencies or public API changes.",
+  "requiredCommands": {
+    "nodeMatrix": {
+      "versions": [
+        "22.23.4",
+        "24.22.2",
+        "25.9.0",
+        "26.13.0"
+      ],
+      "perVersion": {
+        "files": 253,
+        "passed": 3180,
+        "skipped": 19
+      },
+      "actualDSTScript": "PASS for all4",
+      "evidence": "canonical-node-matrix.json"
+    },
+    "timezoneMatrix": {
+      "timezones": 378,
+      "status": "PASS",
+      "evidence": "canonical-timezone-full.json"
+    },
+    "chromium": {
+      "files": 253,
+      "passed": 3181,
+      "skipped": 18,
+      "evidence": "canonical-browser-all.log"
+    },
+    "types": "canonical-quality-types.log",
+    "fullOxlint": "canonical-quality-lint.log",
+    "changedFileOxfmt": "canonical-format-check.log",
+    "forcedAll10SmokeExamplesAndBuild": "canonical-smoke-all.log",
+    "configuredLocaleCommand": {
+      "status": "exit0 GENERATION, not snapshot validation",
+      "command": "mise //pkgs/core:test/locales -> node scripts/build/localeSnapshots/index.ts --test",
+      "evidence": "canonical-quality-locales.log"
+    }
+  },
+  "localeBoundary": {
+    "rootReviewedMandatoryStatus": "Current workflow/CONTRIBUTING/AGENTS do not require bare test; root confirmed 2026-10-29.",
+    "actualBareTestDiagnostic": "Both canonical baseline and candidate fail same original ar-DZ snapshot mismatch. Nonmandatory; no snapshot-validation PASS claimed.",
+    "allGeneratedBaselineCandidateByteEqual": 95,
+    "generatedOutputsDifferingFromGit": 19,
+    "onlyPadding": 16,
+    "preexistingChangedParseCells": [
+      "zh-CN",
+      "zh-HK",
+      "zh-TW"
+    ],
+    "all19RestoredToCanonicalGitBlobs": true,
+    "comparison": "SNAPSHOT_GENERATION_COMPARISON.json",
+    "semanticComparison": "SNAPSHOT_SEMANTIC_COMPARISON.json",
+    "diagnostics": [
+      "baseline-true-snapshot-check.json",
+      "candidate-true-snapshot-check.json"
+    ],
+    "aggregateGuard": "canonical-formal-rest-final exit1 is own post-task integrity guard identifying these19 generated outputs after all preceding configured commands exited0; it is not reported as aggregate PASS."
+  },
+  "regressionComparison": {
+    "suiteSize": 90,
+    "baseline": {
+      "failed": 13,
+      "passed": 77
+    },
+    "originalFloor": {
+      "failed": 12,
+      "passed": 78
+    },
+    "final": {
+      "passed": 90
+    },
+    "evidence": "canonical-targeted-comparison.json",
+    "newOriginalPatchRegressionExample": "2014-02-11T00:00:01.001Z and08.001/32.001; 1970 values are already broken on baseline."
+  },
+  "independentOracle": {
+    "owner": "root",
+    "cases": 3000,
+    "evidence": "F:/Github-PR/ci-evidence/run0948-20261029-root/datefns-fraction-fuzz.json",
+    "notSubstituteForBrowserOrInstalledProof": true
+  },
+  "installedPackage": {
+    "filesByteIdenticalAcrossCanonicalRebuild": 5136,
+    "records": 6,
+    "assertions": 60,
+    "actualDotnetProducer": ".NET10.0.11 TimeOnly.MaxValue + DateTimeOffset O format",
+    "proof": "installed-package-proof.json",
+    "stdout": "installed-package-proof.log",
+    "extractedConsumerSummary": "INSTALLED_CONSUMER_RESULT.json",
+    "artifactManifestEquality": "PACKAGE_CANONICAL_EQUALITY.json",
+    "scope": "Actual clean npm pack/install, ESM/CJS/subpath/FP/context; database-shaped fixture from public report, no database service used."
+  },
+  "canonicalBinding": {
+    "manifest": "CANONICAL_TREE.json",
+    "finalReadback": "CANONICAL_READBACK.json",
+    "finalReadbackFailures": 0,
+    "priorCrlfArchiveDifferences": "CRLF_ARCHIVE_DIFFERENCES.json",
+    "priorCrlfOnlyFileDifferences": 2057,
+    "allFormalChecksRerunOnCanonicalTree": true
+  },
+  "limits": [
+    "Current mathematical hours<25 acceptance is retained. Extremely long24.999... is accepted instead of being rounded to25 and rejected; invalid24.x strict validation remains separate issue4219. No claim of full ISO compatibility or byte-for-byte unchanged invalid-input behavior.",
+    "No paid services, actual database server, production deployment, human review, upstream CI, merge or release claimed.",
+    "Root must refresh stars/activity/defaultHEAD/policies/originalPR and maintenance before public writing."
+  ],
+  "publicWritesPerformed": false,
+  "commitsPerformedByWorker": false,
+  "rootNext": [
+    "Final independent review and fresh admission/maintenance check",
+    "Preserve original author/source in normal commit series; final tree must match candidateTree",
+    "Publish minimal public proof and create PR; read hosted CI/review afterward"
+  ]
+}

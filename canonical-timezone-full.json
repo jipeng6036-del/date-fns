@@ -1,0 +1,24 @@
+{
+  "startedAtUtc": "2026-10-29T10:22:18.409937+00:00",
+  "finishedAtUtc": "2026-10-29T10:31:36.217488+00:00",
+  "seconds": 557.8075542002916,
+  "command": [
+    "docker",
+    "exec",
+    "-w",
+    "/work",
+    "datefns-precision-20261029",
+    "taskset",
+    "-c",
+    "0-7",
+    "env",
+    "MISE_TRUSTED_CONFIG_PATHS=/work",
+    "MISE_TASK_RUN_AUTO_INSTALL=false",
+    "MISE_OFFLINE=true",
+    "mise",
+    "run",
+    "--skip-tools",
+    "//pkgs/core:test/tz"
+  ],
+  "exitCode": 0
+}

@@ -1,0 +1,27 @@
+{
+  "candidateTree": "f33c3d17040806a2c91c55bb28d0ae3d763fcdee",
+  "fileCount": 2070,
+  "failures": [],
+  "verifiedAt": "2026-10-29T12:07:34.305Z"
+}
+package files 5136
+All 5136 package files byte-identical after canonical rebuild
+
+added 1 package in 5s
+{
+  "assertions": 60,
+  "records": 6,
+  "version": "4.4.0",
+  "esmURL": "file:///consumer/node_modules/date-fns/parseISO.js",
+  "cjsPath": "/consumer/node_modules/date-fns/parseISO.cjs",
+  "sourceFiles": [
+    "/evidence/timestamp-records.jsonl",
+    "/evidence/actual-dotnet-record.jsonl"
+  ]
+}
+{
+  "candidateTree": "f33c3d17040806a2c91c55bb28d0ae3d763fcdee",
+  "fileCount": 2070,
+  "failures": [],
+  "verifiedAt": "2026-10-29T12:09:16.855Z"
+}

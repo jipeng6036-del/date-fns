@@ -1,0 +1,360 @@
+
+[1m[30m[46m RUN [49m[39m[22m [36mv5.0.1 [39m[90m/original/pkgs/core[39m
+
+ [31m❯[39m [30m[45m main [49m[39m src/parseISO/test.ts [2m([22m[2m90 tests[22m[2m | [22m[31m12 failed[39m[2m)[22m[32m 21[2mms[22m[39m
+   [31m❯[39m parseISO [2m(90)[22m
+     [31m❯[39m string argument [2m(64)[22m
+       [32m✓[39m centuries [2m(1)[22m
+         [32m✓[39m parses YY[32m 1[2mms[22m[39m
+       [32m✓[39m years [2m(1)[22m
+         [32m✓[39m parses YYYY[32m 1[2mms[22m[39m
+       [32m✓[39m months [2m(1)[22m
+         [32m✓[39m parses YYYY-MM[32m 1[2mms[22m[39m
+       [32m✓[39m weeks [2m(2)[22m
+         [32m✓[39m parses YYYY-Www[32m 1[2mms[22m[39m
+         [32m✓[39m parses YYYYWww[32m 1[2mms[22m[39m
+       [32m✓[39m calendar dates [2m(2)[22m
+         [32m✓[39m parses YYYY-MM-DD[32m 1[2mms[22m[39m
+         [32m✓[39m parses YYYYMMDD[32m 1[2mms[22m[39m
+       [32m✓[39m week dates [2m(3)[22m
+         [32m✓[39m parses YYYY-Www-D[32m 1[2mms[22m[39m
+         [32m✓[39m parses YYYYWwwD[32m 0[2mms[22m[39m
+         [32m✓[39m correctly handles years in which 4 January is Sunday[32m 0[2mms[22m[39m
+       [32m✓[39m ordinal dates [2m(2)[22m
+         [32m✓[39m parses YYYY-DDD[32m 0[2mms[22m[39m
+         [32m✓[39m parses YYYYDDD[32m 0[2mms[22m[39m
+       [32m✓[39m date and time combined [2m(2)[22m
+         [32m✓[39m parses YYYY-MM-DDThh:mm[32m 0[2mms[22m[39m
+         [32m✓[39m parses YYYY-MM-DDThhmm[32m 0[2mms[22m[39m
+       [32m✓[39m extended century representation [2m(4)[22m
+         [32m✓[39m parses century 101 BC - 2 BC[32m 0[2mms[22m[39m
+         [32m✓[39m parses century 1 BC - 99 AD[32m 0[2mms[22m[39m
+         [32m✓[39m parses centuries after 9999 AD[32m 0[2mms[22m[39m
+         [32m✓[39m allows to specify the number of additional digits[32m 0[2mms[22m[39m
+       [32m✓[39m extended year representation [2m(5)[22m
+         [32m✓[39m correctly parses years from 1 AD to 99 AD[32m 0[2mms[22m[39m
+         [32m✓[39m parses years after 9999 AD[32m 0[2mms[22m[39m
+         [32m✓[39m allows to specify the number of additional digits[32m 0[2mms[22m[39m
+         [32m✓[39m parses year 1 BC[32m 0[2mms[22m[39m
+         [32m✓[39m parses years less than 1 BC[32m 0[2mms[22m[39m
+       [31m❯[39m float time [2m(35)[22m
+         [32m✓[39m parses float hours[32m 0[2mms[22m[39m
+         [32m✓[39m parses float minutes[32m 0[2mms[22m[39m
+         [32m✓[39m parses float seconds[32m 0[2mms[22m[39m
+         [32m✓[39m truncates sub-ms seconds without advancing the local date[32m 0[2mms[22m[39m
+         [32m✓[39m preserves whole milliseconds for 2022-10-24T23:59:59.999999999+02:00[32m 0[2mms[22m[39m
+         [32m✓[39m preserves whole milliseconds for 1969-12-31T23:59:59.999999999Z[32m 5[2mms[22m[39m
+[31m         [31m×[31m preserves whole milliseconds for 1970-01-01T00:00:01.001Z[39m[32m 5[2mms[22m[39m
+[31m         [31m×[31m preserves whole milliseconds for 1970-01-01T00:00:08.001Z[39m[32m 5[2mms[22m[39m
+[31m         [31m×[31m preserves whole milliseconds for 1970-01-01T00:00:32.001Z[39m[32m 5[2mms[22m[39m
+[31m         [31m×[31m preserves whole milliseconds for 2014-02-11T00:00:01.001Z[39m[32m 5[2mms[22m[39m
+[31m         [31m×[31m preserves whole milliseconds for 2014-02-11T00:00:08.001Z[39m[32m 1[2mms[22m[39m
+[31m         [31m×[31m preserves whole milliseconds for 2014-02-11T00:00:32.001Z[39m[32m 1[2mms[22m[39m
+         [32m✓[39m preserves whole milliseconds for 1970-01-01T00:00:00.000999999Z[32m 1[2mms[22m[39m
+         [32m✓[39m preserves whole milliseconds for 1970-01-01T00:00:01.000999999Z[32m 1[2mms[22m[39m
+         [32m✓[39m preserves whole milliseconds for 1970-01-01T00:00:00,999999999Z[32m 1[2mms[22m[39m
+         [32m✓[39m preserves whole milliseconds for 1970-01-01T01:00:00.999999999+01:00[32m 0[2mms[22m[39m
+         [32m✓[39m preserves whole milliseconds for 1969-12-31T23:00:00.999999999-01:00[32m 0[2mms[22m[39m
+         [32m✓[39m preserves whole milliseconds for 1970-01-01T00:00.000016666666Z[32m 0[2mms[22m[39m
+         [32m✓[39m preserves whole milliseconds for 1970-01-01T00:00.000016666667Z[32m 0[2mms[22m[39m
+         [32m✓[39m preserves whole milliseconds for 1970-01-01T00:00.016683333333Z[32m 0[2mms[22m[39m
+         [32m✓[39m preserves whole milliseconds for 1970-01-01T00:00.016683333334Z[32m 0[2mms[22m[39m
+         [32m✓[39m preserves whole milliseconds for 1970-01-01T00.0000002777777Z[32m 0[2mms[22m[39m
+         [32m✓[39m preserves whole milliseconds for 1970-01-01T00.0000002777778Z[32m 0[2mms[22m[39m
+         [32m✓[39m preserves whole milliseconds for 1970-01-01T00.000278055555Z[32m 0[2mms[22m[39m
+         [32m✓[39m preserves whole milliseconds for 1970-01-01T00.000278055556Z[32m 0[2mms[22m[39m
+         [32m✓[39m preserves whole milliseconds for 1970-01-01T00,000278055556Z[32m 1[2mms[22m[39m
+         [32m✓[39m preserves whole milliseconds for 1970-01-01T00.0000001:00.00001:00.0001Z[32m 1[2mms[22m[39m
+[31m         [31m×[31m preserves whole milliseconds for 1970-01-01T00:00:01.99999999999999999999Z[39m[32m 1[2mms[22m[39m
+[31m         [31m×[31m preserves whole milliseconds for 1970-01-01T00:12.99999999999999999999Z[39m[32m 1[2mms[22m[39m
+[31m         [31m×[31m preserves whole milliseconds for 1970-01-01T12.99999999999999999999Z[39m[32m 1[2mms[22m[39m
+[31m         [31m×[31m preserves whole milliseconds for 1970-01-01T00:00:59.99999999999999999999Z[39m[32m 1[2mms[22m[39m
+[31m         [31m×[31m preserves whole milliseconds for 1970-01-01T00:59.99999999999999999999Z[39m[32m 1[2mms[22m[39m
+[31m         [31m×[31m preserves whole milliseconds for 1970-01-01T23.99999999999999999999Z[39m[32m 1[2mms[22m[39m
+         [32m✓[39m preserves whole milliseconds for 1970-01-01T24.00000000000000000000Z[32m 1[2mms[22m[39m
+         [32m✓[39m parses , as decimal mark[32m 1[2mms[22m[39m
+       [32m✓[39m timezones [2m(5)[22m
+         [32m✓[39m when the date and the time are specified [2m(4)[22m
+           [32m✓[39m parses Z[32m 0[2mms[22m[39m
+           [32m✓[39m parses ±hh:mm[32m 0[2mms[22m[39m
+           [32m✓[39m parses ±hhmm[32m 0[2mms[22m[39m
+           [32m✓[39m parses ±hh[32m 0[2mms[22m[39m
+         [32m✓[39m when the year and the month are specified [2m(1)[22m
+           [32m✓[39m sets timezone correctly on yyyy-MMZ format[32m 0[2mms[22m[39m
+       [32m✓[39m failure [2m(1)[22m
+         [32m✓[39m returns `Invalid Date` if the string is not an ISO formatted date[32m 0[2mms[22m[39m
+     [32m✓[39m validation [2m(19)[22m
+       [32m✓[39m months [2m(1)[22m
+         [32m✓[39m returns `Invalid Date` for invalid month[32m 1[2mms[22m[39m
+       [32m✓[39m weeks [2m(2)[22m
+         [32m✓[39m returns `Invalid Date` for invalid week[32m 0[2mms[22m[39m
+         [32m✓[39m returns `Invalid Date` for 54th week[32m 2[2mms[22m[39m
+       [32m✓[39m calendar dates [2m(3)[22m
+         [32m✓[39m returns `Invalid Date` for invalid day of the month[32m 2[2mms[22m[39m
+         [32m✓[39m returns `Invalid Date` for 29th of February of non-leap year[32m 2[2mms[22m[39m
+         [32m✓[39m parses 29th of February of leap year[32m 2[2mms[22m[39m
+       [32m✓[39m week dates [2m(1)[22m
+         [32m✓[39m returns `Invalid Date` for invalid day of the week[32m 2[2mms[22m[39m
+       [32m✓[39m ordinal dates [2m(3)[22m
+         [32m✓[39m returns `Invalid Date` for invalid day of the year[32m 1[2mms[22m[39m
+         [32m✓[39m returns `Invalid Date` for 366th day of non-leap year[32m 1[2mms[22m[39m
+         [32m✓[39m parses 366th day of leap year[32m 1[2mms[22m[39m
+       [32m✓[39m date [2m(1)[22m
+         [32m✓[39m returns `Invalid Date` when it contains spaces after the date[32m 0[2mms[22m[39m
+       [32m✓[39m time [2m(7)[22m
+         [32m✓[39m parses 24:00 as midnight of the next day[32m 0[2mms[22m[39m
+         [32m✓[39m returns `Invalid Date` for anything after 24:00[32m 0[2mms[22m[39m
+         [32m✓[39m returns `Invalid Date` for invalid hours[32m 0[2mms[22m[39m
+         [32m✓[39m returns `Invalid Date` for invalid minutes[32m 0[2mms[22m[39m
+         [32m✓[39m returns `Invalid Date` for invalid seconds[32m 0[2mms[22m[39m
+         [32m✓[39m returns `Invalid Date` for invalid time[32m 0[2mms[22m[39m
+         [32m✓[39m returns `Invalid Date` when it contains spaces after the time[32m 0[2mms[22m[39m
+       [32m✓[39m timezones [2m(1)[22m
+         [32m✓[39m returns `Invalid Date` for invalid timezone minutes[32m 0[2mms[22m[39m
+     [32m✓[39m invalid argument [2m(2)[22m
+       [32m✓[39m returns Invalid Date if argument is non-date string[32m 4[2mms[22m[39m
+       [32m✓[39m returns Invalid Date if argument is non-date string containing a colon[32m 4[2mms[22m[39m
+     [32m✓[39m resolves the date type by default[32m 4[2mms[22m[39m
+     [32m✓[39m context [2m(3)[22m
+       [32m✓[39m allows to specify the context[32m 4[2mms[22m[39m
+       [32m✓[39m preserves sub-ms precision handling in date extension contexts[32m 4[2mms[22m[39m
+       [32m✓[39m resolves the context date type[32m 2[2mms[22m[39m
+     [32m✓[39m time zones [2m(1)[22m
+       [32m✓[39m properly parses dates around DST transitions[32m 1[2mms[22m[39m
+
+[31m⎯⎯⎯⎯⎯⎯[39m[1m[41m Failed Tests 12 [49m[22m[31m⎯⎯⎯⎯⎯⎯⎯[39m
+
+[41m[1m FAIL [22m[49m [30m[45m main [49m[39m src/parseISO/test.ts[2m > [22mparseISO[2m > [22mstring argument[2m > [22mfloat time[2m > [22mpreserves whole milliseconds for 1970-01-01T00:00:01.001Z
+[31m[1mAssertionError[22m: expected 1000 to be 1001 // Object.is equality[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- 1001[39m
+[31m+ 1000[39m
+
+[36m [2m❯[22m src/parseISO/test.ts:[2m221:43[22m[39m
+    [90m219|[39m         ["1970-01-01T24.00000000000000000000Z", 86400000],
+    [90m220|[39m       ])("preserves whole milliseconds for %s", (input, expected) => {
+    [90m221|[39m         expect(parseISO(input).getTime()).toBe(expected);
+    [90m   |[39m                                           [31m^[39m
+    [90m222|[39m       });
+    [90m223|[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/12]⎯[22m[39m
+
+[41m[1m FAIL [22m[49m [30m[45m main [49m[39m src/parseISO/test.ts[2m > [22mparseISO[2m > [22mstring argument[2m > [22mfloat time[2m > [22mpreserves whole milliseconds for 1970-01-01T00:00:08.001Z
+[31m[1mAssertionError[22m: expected 8000 to be 8001 // Object.is equality[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- 8001[39m
+[31m+ 8000[39m
+
+[36m [2m❯[22m src/parseISO/test.ts:[2m221:43[22m[39m
+    [90m219|[39m         ["1970-01-01T24.00000000000000000000Z", 86400000],
+    [90m220|[39m       ])("preserves whole milliseconds for %s", (input, expected) => {
+    [90m221|[39m         expect(parseISO(input).getTime()).toBe(expected);
+    [90m   |[39m                                           [31m^[39m
+    [90m222|[39m       });
+    [90m223|[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/12]⎯[22m[39m
+
+[41m[1m FAIL [22m[49m [30m[45m main [49m[39m src/parseISO/test.ts[2m > [22mparseISO[2m > [22mstring argument[2m > [22mfloat time[2m > [22mpreserves whole milliseconds for 1970-01-01T00:00:32.001Z
+[31m[1mAssertionError[22m: expected 32000 to be 32001 // Object.is equality[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- 32001[39m
+[31m+ 32000[39m
+
+[36m [2m❯[22m src/parseISO/test.ts:[2m221:43[22m[39m
+    [90m219|[39m         ["1970-01-01T24.00000000000000000000Z", 86400000],
+    [90m220|[39m       ])("preserves whole milliseconds for %s", (input, expected) => {
+    [90m221|[39m         expect(parseISO(input).getTime()).toBe(expected);
+    [90m   |[39m                                           [31m^[39m
+    [90m222|[39m       });
+    [90m223|[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/12]⎯[22m[39m
+
+[41m[1m FAIL [22m[49m [30m[45m main [49m[39m src/parseISO/test.ts[2m > [22mparseISO[2m > [22mstring argument[2m > [22mfloat time[2m > [22mpreserves whole milliseconds for 2014-02-11T00:00:01.001Z
+[31m[1mAssertionError[22m: expected 1392076801000 to be 1392076801001 // Object.is equality[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- 1392076801001[39m
+[31m+ 1392076801000[39m
+
+[36m [2m❯[22m src/parseISO/test.ts:[2m221:43[22m[39m
+    [90m219|[39m         ["1970-01-01T24.00000000000000000000Z", 86400000],
+    [90m220|[39m       ])("preserves whole milliseconds for %s", (input, expected) => {
+    [90m221|[39m         expect(parseISO(input).getTime()).toBe(expected);
+    [90m   |[39m                                           [31m^[39m
+    [90m222|[39m       });
+    [90m223|[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/12]⎯[22m[39m
+
+[41m[1m FAIL [22m[49m [30m[45m main [49m[39m src/parseISO/test.ts[2m > [22mparseISO[2m > [22mstring argument[2m > [22mfloat time[2m > [22mpreserves whole milliseconds for 2014-02-11T00:00:08.001Z
+[31m[1mAssertionError[22m: expected 1392076808000 to be 1392076808001 // Object.is equality[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- 1392076808001[39m
+[31m+ 1392076808000[39m
+
+[36m [2m❯[22m src/parseISO/test.ts:[2m221:43[22m[39m
+    [90m219|[39m         ["1970-01-01T24.00000000000000000000Z", 86400000],
+    [90m220|[39m       ])("preserves whole milliseconds for %s", (input, expected) => {
+    [90m221|[39m         expect(parseISO(input).getTime()).toBe(expected);
+    [90m   |[39m                                           [31m^[39m
+    [90m222|[39m       });
+    [90m223|[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/12]⎯[22m[39m
+
+[41m[1m FAIL [22m[49m [30m[45m main [49m[39m src/parseISO/test.ts[2m > [22mparseISO[2m > [22mstring argument[2m > [22mfloat time[2m > [22mpreserves whole milliseconds for 2014-02-11T00:00:32.001Z
+[31m[1mAssertionError[22m: expected 1392076832000 to be 1392076832001 // Object.is equality[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- 1392076832001[39m
+[31m+ 1392076832000[39m
+
+[36m [2m❯[22m src/parseISO/test.ts:[2m221:43[22m[39m
+    [90m219|[39m         ["1970-01-01T24.00000000000000000000Z", 86400000],
+    [90m220|[39m       ])("preserves whole milliseconds for %s", (input, expected) => {
+    [90m221|[39m         expect(parseISO(input).getTime()).toBe(expected);
+    [90m   |[39m                                           [31m^[39m
+    [90m222|[39m       });
+    [90m223|[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/12]⎯[22m[39m
+
+[41m[1m FAIL [22m[49m [30m[45m main [49m[39m src/parseISO/test.ts[2m > [22mparseISO[2m > [22mstring argument[2m > [22mfloat time[2m > [22mpreserves whole milliseconds for 1970-01-01T00:00:01.99999999999999999999Z
+[31m[1mAssertionError[22m: expected 2000 to be 1999 // Object.is equality[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- 1999[39m
+[31m+ 2000[39m
+
+[36m [2m❯[22m src/parseISO/test.ts:[2m221:43[22m[39m
+    [90m219|[39m         ["1970-01-01T24.00000000000000000000Z", 86400000],
+    [90m220|[39m       ])("preserves whole milliseconds for %s", (input, expected) => {
+    [90m221|[39m         expect(parseISO(input).getTime()).toBe(expected);
+    [90m   |[39m                                           [31m^[39m
+    [90m222|[39m       });
+    [90m223|[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/12]⎯[22m[39m
+
+[41m[1m FAIL [22m[49m [30m[45m main [49m[39m src/parseISO/test.ts[2m > [22mparseISO[2m > [22mstring argument[2m > [22mfloat time[2m > [22mpreserves whole milliseconds for 1970-01-01T00:12.99999999999999999999Z
+[31m[1mAssertionError[22m: expected 780000 to be 779999 // Object.is equality[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- 779999[39m
+[31m+ 780000[39m
+
+[36m [2m❯[22m src/parseISO/test.ts:[2m221:43[22m[39m
+    [90m219|[39m         ["1970-01-01T24.00000000000000000000Z", 86400000],
+    [90m220|[39m       ])("preserves whole milliseconds for %s", (input, expected) => {
+    [90m221|[39m         expect(parseISO(input).getTime()).toBe(expected);
+    [90m   |[39m                                           [31m^[39m
+    [90m222|[39m       });
+    [90m223|[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/12]⎯[22m[39m
+
+[41m[1m FAIL [22m[49m [30m[45m main [49m[39m src/parseISO/test.ts[2m > [22mparseISO[2m > [22mstring argument[2m > [22mfloat time[2m > [22mpreserves whole milliseconds for 1970-01-01T12.99999999999999999999Z
+[31m[1mAssertionError[22m: expected 46800000 to be 46799999 // Object.is equality[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- 46799999[39m
+[31m+ 46800000[39m
+
+[36m [2m❯[22m src/parseISO/test.ts:[2m221:43[22m[39m
+    [90m219|[39m         ["1970-01-01T24.00000000000000000000Z", 86400000],
+    [90m220|[39m       ])("preserves whole milliseconds for %s", (input, expected) => {
+    [90m221|[39m         expect(parseISO(input).getTime()).toBe(expected);
+    [90m   |[39m                                           [31m^[39m
+    [90m222|[39m       });
+    [90m223|[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/12]⎯[22m[39m
+
+[41m[1m FAIL [22m[49m [30m[45m main [49m[39m src/parseISO/test.ts[2m > [22mparseISO[2m > [22mstring argument[2m > [22mfloat time[2m > [22mpreserves whole milliseconds for 1970-01-01T00:00:59.99999999999999999999Z
+[31m[1mAssertionError[22m: expected NaN to be 59999 // Object.is equality[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- 59999[39m
+[31m+ NaN[39m
+
+[36m [2m❯[22m src/parseISO/test.ts:[2m221:43[22m[39m
+    [90m219|[39m         ["1970-01-01T24.00000000000000000000Z", 86400000],
+    [90m220|[39m       ])("preserves whole milliseconds for %s", (input, expected) => {
+    [90m221|[39m         expect(parseISO(input).getTime()).toBe(expected);
+    [90m   |[39m                                           [31m^[39m
+    [90m222|[39m       });
+    [90m223|[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[10/12]⎯[22m[39m
+
+[41m[1m FAIL [22m[49m [30m[45m main [49m[39m src/parseISO/test.ts[2m > [22mparseISO[2m > [22mstring argument[2m > [22mfloat time[2m > [22mpreserves whole milliseconds for 1970-01-01T00:59.99999999999999999999Z
+[31m[1mAssertionError[22m: expected NaN to be 3599999 // Object.is equality[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- 3599999[39m
+[31m+ NaN[39m
+
+[36m [2m❯[22m src/parseISO/test.ts:[2m221:43[22m[39m
+    [90m219|[39m         ["1970-01-01T24.00000000000000000000Z", 86400000],
+    [90m220|[39m       ])("preserves whole milliseconds for %s", (input, expected) => {
+    [90m221|[39m         expect(parseISO(input).getTime()).toBe(expected);
+    [90m   |[39m                                           [31m^[39m
+    [90m222|[39m       });
+    [90m223|[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[11/12]⎯[22m[39m
+
+[41m[1m FAIL [22m[49m [30m[45m main [49m[39m src/parseISO/test.ts[2m > [22mparseISO[2m > [22mstring argument[2m > [22mfloat time[2m > [22mpreserves whole milliseconds for 1970-01-01T23.99999999999999999999Z
+[31m[1mAssertionError[22m: expected 86400000 to be 86399999 // Object.is equality[39m
+
+[32m- Expected[39m
+[31m+ Received[39m
+
+[32m- 86399999[39m
+[31m+ 86400000[39m
+
+[36m [2m❯[22m src/parseISO/test.ts:[2m221:43[22m[39m
+    [90m219|[39m         ["1970-01-01T24.00000000000000000000Z", 86400000],
+    [90m220|[39m       ])("preserves whole milliseconds for %s", (input, expected) => {
+    [90m221|[39m         expect(parseISO(input).getTime()).toBe(expected);
+    [90m   |[39m                                           [31m^[39m
+    [90m222|[39m       });
+    [90m223|[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[12/12]⎯[22m[39m
+
+
+[2m Test Files [22m [1m[31m1 failed[39m[22m[90m (1)[39m
+[2m      Tests [22m [1m[31m12 failed[39m[22m[2m | [22m[1m[32m78 passed[39m[22m[90m (90)[39m
+[2m   Start at [22m 10:53:48
+[2m   Duration [22m 4.01s[2m (transform 98%, import 1%, tests 1%)[22m
+

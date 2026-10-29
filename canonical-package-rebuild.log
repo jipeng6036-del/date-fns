@@ -1,0 +1,31 @@
+mise WARN  Failed to resolve tool version list for watchexec: [/work/mise.toml] watchexec@latest: no versions found for watchexec
+mise WARN  Failed to resolve tool version list for gh: [/work/mise.toml] gh@latest: no versions found for gh
+[//pkgs/core:build/package] $ 	import * as fs from "node:fs/promises";
+[//pkgs/core:build/package/cached] $ args=()
+⚡️ Building package
+
+🚧 Building ESM code...
+🟢 ESM code is ready!
+
+🚧 Building CommonJS code...
+🟢 CommonJS code is ready!
+
+🚧 Building TypeScript definitions...
+🟢 TypeScript definitions are ready!
+
+🚧 Flattening the modules...
+🟢 Flattening is complete!
+
+🚧 Building CommonJS type definitions...
+🟢 CommonJS type definitions are ready!
+
+🚧 Copying misc files...
+🟢 Misc files are ready!
+
+🚧 Cleaning up package.json...
+🟢 package.json is ready!
+
+🚧 Building CDN versions...
+🟢 CDN versions are ready!
+
+⭐️ Build complete!

@@ -1,0 +1,5 @@
+{"source":"dotnet-TimeOnly.MaxValue","value":"2022-10-24T23:59:59.9999999+02:00","expected":"2022-10-24T21:59:59.999Z"}
+{"source":"database-nanoseconds","value":"2022-10-24T23:59:59.999999999+02:00","expected":"2022-10-24T21:59:59.999Z"}
+{"source":"millisecond-database","value":"2014-02-11T00:00:01.001Z","expected":"2014-02-11T00:00:01.001Z"}
+{"source":"pre-epoch-database","value":"1969-12-31T23:59:59.999999999Z","expected":"1969-12-31T23:59:59.999Z"}
+{"source":"long-decimal-wire-value","value":"2014-02-11T00:00:01.99999999999999999999Z","expected":"2014-02-11T00:00:01.999Z"}

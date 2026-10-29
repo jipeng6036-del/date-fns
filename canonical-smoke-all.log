@@ -1,0 +1,111 @@
+mise WARN  Failed to resolve tool version list for watchexec: [/work/mise.toml] watchexec@latest: no versions found for watchexec
+mise WARN  Failed to resolve tool version list for gh: [/work/mise.toml] gh@latest: no versions found for gh
+[//pkgs/core:build/package] $ 	import * as fs from "node:fs/promises";
+[//pkgs/core:build/package/cached] $ args=()
+[//pkgs/core:build/package/cached] ⚡️ Building package
+[//pkgs/core:build/package/cached] 
+[//pkgs/core:build/package/cached] 🚧 Building ESM code...
+[//pkgs/core:build/package/cached] 🟢 ESM code is ready!
+[//pkgs/core:build/package/cached] 
+[//pkgs/core:build/package/cached] 🚧 Building CommonJS code...
+[//pkgs/core:build/package/cached] 🟢 CommonJS code is ready!
+[//pkgs/core:build/package/cached] 
+[//pkgs/core:build/package/cached] 🚧 Building TypeScript definitions...
+[//pkgs/core:build/package/cached] 🟢 TypeScript definitions are ready!
+[//pkgs/core:build/package/cached] 
+[//pkgs/core:build/package/cached] 🚧 Flattening the modules...
+[//pkgs/core:build/package/cached] 🟢 Flattening is complete!
+[//pkgs/core:build/package/cached] 
+[//pkgs/core:build/package/cached] 🚧 Building CommonJS type definitions...
+[//pkgs/core:build/package/cached] 🟢 CommonJS type definitions are ready!
+[//pkgs/core:build/package/cached] 
+[//pkgs/core:build/package/cached] 🚧 Copying misc files...
+[//pkgs/core:build/package/cached] 🟢 Misc files are ready!
+[//pkgs/core:build/package/cached] 
+[//pkgs/core:build/package/cached] 🚧 Cleaning up package.json...
+[//pkgs/core:build/package/cached] 🟢 package.json is ready!
+[//pkgs/core:build/package/cached] 
+[//pkgs/core:build/package/cached] 🚧 Building CDN versions...
+[//pkgs/core:build/package/cached] 🟢 CDN versions are ready!
+[//pkgs/core:build/package/cached] 
+[//pkgs/core:build/package/cached] ⭐️ Build complete!
+[//pkgs/core:build/package/cached] Finished in 14.59s
+[//pkgs/core:build/package] Finished in 15.26s
+[//pkgs/core/examples:install] $ pnpm install
+[//pkgs/core/examples:install] Scope: all 11 workspace projects
+[//pkgs/core/examples:install] ✓ Lockfile passes supply-chain policies (verified 8m ago)
+[//pkgs/core/examples:install] Lockfile is up to date, resolution step is skipped
+[//pkgs/core/examples:install] Done in 165ms using pnpm v12.16.1
+[//pkgs/core/examples:install] Finished in 277.8ms
+[//pkgs/core/examples/vite:build] $ pnpm exec vite build
+[//pkgs/core/examples/webpack:build] $ pnpm exec webpack
+[//pkgs/core/examples/rollup:build] $ pnpm exec rollup --config
+[//pkgs/core/examples/cjs:test] $ node test.cjs
+[//pkgs/core/examples/esm:test] $ node test.js
+[//pkgs/core/examples/ts:types] $ pnpm tsc
+[//pkgs/core/examples/cdn:test] $ test $(node ./basic.js) = true
+[//pkgs/core/examples/node-esm:test] $ test $(node ./example.js) = true
+[//pkgs/core/examples/cjs:test] Finished in 426.1ms
+[//pkgs/core/examples/lodash-fp:build] $ pnpm exec esbuild example.js --outdir=…
+[//pkgs/core/examples/lodash-fp:build] 
+[//pkgs/core/examples/lodash-fp:build]   dist/example.js  746b 
+[//pkgs/core/examples/lodash-fp:build] 
+[//pkgs/core/examples/lodash-fp:build] ⚡ Done in 18ms
+[//pkgs/core/examples/lodash-fp:build] Finished in 283.5ms
+[//pkgs/core/examples/cts:types] $ pnpm tsc
+[//pkgs/core/examples/vite:build] vite v5.4.19 building for production...
+[//pkgs/core/examples/vite:build] transforming...
+[//pkgs/core/examples/rollup:build] [36m
+[//pkgs/core/examples/rollup:build] [1m./example.js[22m → [1mdist/example.js[22m...[39m
+[//pkgs/core/examples/vite:build] ✓ 335 modules transformed.
+[//pkgs/core/examples/vite:build] rendering chunks...
+[//pkgs/core/examples/vite:build] computing gzip size...
+[//pkgs/core/examples/vite:build] dist/index.html                   0.46 kB │ gzip:  0.30 kB
+[//pkgs/core/examples/vite:build] dist/assets/index-Ca74PG3G.css    1.39 kB │ gzip:  0.72 kB
+[//pkgs/core/examples/vite:build] dist/assets/index-BcUJj-Ia.js   162.92 kB │ gzip: 51.41 kB
+[//pkgs/core/examples/vite:build] ✓ built in 5.76s
+[//pkgs/core/examples/vite:build] Finished in 6.79s
+[//pkgs/core/examples/lodash-fp:test] $ test $(env TZ=UTC node ./dist/example.j…
+[//pkgs/core/examples/lodash-fp:test] Finished in 1.40s
+[//pkgs/core/examples/ts:types] Finished in 11.51s
+[//pkgs/core/examples/ts:test] $ node test.ts
+[//pkgs/core/examples/cdn:test] Finished in 12.35s
+[//pkgs/core/examples/esm:test] Finished in 12.39s
+[//pkgs/core/examples/rollup:build] [32mcreated [1mdist/example.js[22m in [1m11s[22m[39m
+[//pkgs/core/examples/rollup:build] [36m
+[//pkgs/core/examples/rollup:build] [1m./fp.js[22m → [1mdist/fp.js[22m...[39m
+[//pkgs/core/examples/webpack:build] asset fp.js 24.2 KiB [compared for emit] [minimized] (name: fp)
+[//pkgs/core/examples/webpack:build] asset misc.js 23.8 KiB [compared for emit] [minimized] (name: misc)
+[//pkgs/core/examples/webpack:build] asset example.js 18.8 KiB [compared for emit] [minimized] (name: example)
+[//pkgs/core/examples/webpack:build] asset minimal.js 265 bytes [compared for emit] [minimized] (name: minimal)
+[//pkgs/core/examples/webpack:build] asset constants.js 115 bytes [compared for emit] [minimized] (name: constants)
+[//pkgs/core/examples/webpack:build] orphan modules 1.66 MiB [orphan] 1223 modules
+[//pkgs/core/examples/webpack:build] cacheable modules 298 KiB
+[//pkgs/core/examples/webpack:build]   ./example.js + 36 modules 87.2 KiB [built] [code generated]
+[//pkgs/core/examples/webpack:build]   ./fp.js + 47 modules 102 KiB [built] [code generated]
+[//pkgs/core/examples/webpack:build]   ./misc.js + 42 modules 96.1 KiB [built] [code generated]
+[//pkgs/core/examples/webpack:build]   ./minimal.js + 3 modules 8.21 KiB [built] [code generated]
+[//pkgs/core/examples/webpack:build]   ./constants.js + 1 modules 4.58 KiB [built] [code generated]
+[//pkgs/core/examples/webpack:build] webpack 5.101.0 compiled successfully in 10549 ms
+[//pkgs/core/examples/webpack:build] Finished in 13.54s
+[//pkgs/core/examples/webpack:test] $ test $(node ./dist/example.js) = true
+[//pkgs/core/examples/webpack:test] Finished in 426.7ms
+[//pkgs/core/examples/ts:test] Finished in 2.61s
+[//pkgs/core/examples/cts:types] Finished in 13.78s
+[//pkgs/core/examples/cts:test] $ node test.ts
+[//pkgs/core/examples/cts:test] Finished in 187.8ms
+[//pkgs/core/examples/node-esm:test] Finished in 18.11s
+[//pkgs/core/examples/rollup:build] [32mcreated [1mdist/fp.js[22m in [1m8.3s[22m[39m
+[//pkgs/core/examples/rollup:build] [36m
+[//pkgs/core/examples/rollup:build] [1m./misc.js[22m → [1mdist/misc.js[22m...[39m
+[//pkgs/core/examples/rollup:build] [32mcreated [1mdist/misc.js[22m in [1m5.2s[22m[39m
+[//pkgs/core/examples/rollup:build] [36m
+[//pkgs/core/examples/rollup:build] [1m./minimal.js[22m → [1mdist/minimal.js[22m...[39m
+[//pkgs/core/examples/rollup:build] [32mcreated [1mdist/minimal.js[22m in [1m2.1s[22m[39m
+[//pkgs/core/examples/rollup:build] [36m
+[//pkgs/core/examples/rollup:build] [1m./constants.js[22m → [1mdist/constants.js[22m...[39m
+[//pkgs/core/examples/rollup:build] [32mcreated [1mdist/constants.js[22m in [1m127ms[22m[39m
+[//pkgs/core/examples/rollup:build] Finished in 28.46s
+[//pkgs/core/examples/rollup:test] $ test $(node ./dist/example.js) = true
+[//pkgs/core/examples/rollup:test] Finished in 181.1ms
+Finished in 44.25s
